@@ -3,7 +3,7 @@
 /**
  * This file is part of the contentful/contentful-bundle package.
  *
- * @copyright 2015-2020 Contentful GmbH
+ * @copyright 2015-2018 Contentful GmbH
  * @license   MIT
  */
 
@@ -41,13 +41,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        if (\method_exists(TreeBuilder::class, 'getRootNode')) {
-            $treeBuilder = new TreeBuilder('contentful', 'array', $this->builder);
-            $root = $treeBuilder->getRootNode();
-        } else {
-            $treeBuilder = new TreeBuilder();
-            $root = $treeBuilder->root('contentful', 'array', $this->builder);
-        }
+        $treeBuilder = new TreeBuilder();
+        $root = $treeBuilder->root('contentful', 'array', $this->builder);
 
         $root
             ->addDefaultsIfNotSet()
@@ -195,6 +190,10 @@ class Configuration implements ConfigurationInterface
             ->booleanNode('content')
             ->info('If true, entry and asset data will be cached during runtime')
             ->defaultFalse()
+            ->end()
+            ->scalarNode('prefix')
+            ->info('Prefix will be prepended to cache key.')
+            ->defaultNull()
             ->end()
             ->end()
         ;
