@@ -9,9 +9,9 @@
 
 declare(strict_types=1);
 
-namespace Contentful\ContentfulBundle\Controller\Delivery;
+namespace Atolye15\ContentfulBundle\Controller\Delivery;
 
-use Contentful\ContentfulBundle\DataCollector\Delivery\ClientDataCollector;
+use Atolye15\ContentfulBundle\DataCollector\Delivery\ClientDataCollector;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Profiler\Profiler;
 use Twig\Environment;

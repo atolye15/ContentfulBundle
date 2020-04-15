@@ -9,7 +9,7 @@
 
 declare(strict_types=1);
 
-namespace Contentful\ContentfulBundle\DependencyInjection;
+namespace Atolye15\ContentfulBundle\DependencyInjection;
 
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Log\LoggerInterface;

@@ -9,13 +9,13 @@
 
 declare(strict_types=1);
 
-namespace Contentful\Tests\ContentfulBundle\Unit\DependencyInjection;
+namespace Atolye15\Tests\ContentfulBundle\Unit\DependencyInjection;
 
 use Cache\Adapter\PHPArray\ArrayCachePool;
-use Contentful\ContentfulBundle\DependencyInjection\ContentfulExtension;
-use Contentful\Delivery\Client;
-use Contentful\Delivery\Client\ClientInterface;
-use Contentful\Tests\ContentfulBundle\TestCase;
+use Atolye15\ContentfulBundle\DependencyInjection\ContentfulExtension;
+use Atolye15\Delivery\Client;
+use Atolye15\Delivery\Client\ClientInterface;
+use Atolye15\Tests\ContentfulBundle\TestCase;
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\Handler\CurlHandler;
 use GuzzleHttp\HandlerStack;

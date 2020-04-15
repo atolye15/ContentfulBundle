@@ -9,12 +9,12 @@
 
 declare(strict_types=1);
 
-namespace Contentful\Tests\ContentfulBundle\Unit\Cache\Delivery;
+namespace Atolye15\Tests\ContentfulBundle\Unit\Cache\Delivery;
 
 use Cache\Adapter\PHPArray\ArrayCachePool;
-use Contentful\ContentfulBundle\Cache\Delivery\CacheClearer;
-use Contentful\Delivery\Client;
-use Contentful\Tests\ContentfulBundle\TestCase;
+use Atolye15\ContentfulBundle\Cache\Delivery\CacheClearer;
+use Atolye15\Delivery\Client;
+use Atolye15\Tests\ContentfulBundle\TestCase;
 
 class CacheClearerTest extends TestCase
 {

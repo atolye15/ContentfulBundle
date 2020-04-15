@@ -9,10 +9,10 @@
 
 declare(strict_types=1);
 
-namespace Contentful\ContentfulBundle\Cache\Delivery;
+namespace Atolye15\ContentfulBundle\Cache\Delivery;
 
-use Contentful\Delivery\Cache\CacheWarmer as SdkCacheWarmer;
-use Contentful\Delivery\Client;
+use Atolye15\Delivery\Cache\CacheWarmer as SdkCacheWarmer;
+use Atolye15\Delivery\Client;
 use Psr\Cache\CacheItemPoolInterface;
 use Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerInterface;
 

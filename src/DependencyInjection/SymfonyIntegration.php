@@ -9,9 +9,9 @@
 
 declare(strict_types=1);
 
-namespace Contentful\ContentfulBundle\DependencyInjection;
+namespace Atolye15\ContentfulBundle\DependencyInjection;
 
-use Contentful\Core\Api\IntegrationInterface;
+use Atolye15\Core\Api\IntegrationInterface;
 
 class SymfonyIntegration implements IntegrationInterface
 {

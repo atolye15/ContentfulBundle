@@ -9,10 +9,10 @@
 
 declare(strict_types=1);
 
-namespace Contentful\Tests\ContentfulBundle\ContentfulBundle\Unit\Compiler;
+namespace Atolye15\Tests\ContentfulBundle\ContentfulBundle\Unit\Compiler;
 
-use Contentful\ContentfulBundle\DependencyInjection\Compiler\ProfilerControllerPass;
-use Contentful\Tests\ContentfulBundle\TestCase;
+use Atolye15\ContentfulBundle\DependencyInjection\Compiler\ProfilerControllerPass;
+use Atolye15\Tests\ContentfulBundle\TestCase;
 use Symfony\Component\DependencyInjection\Definition;
 
 class ProfilerControllerPassTest extends TestCase

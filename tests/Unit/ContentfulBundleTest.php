@@ -9,11 +9,11 @@
 
 declare(strict_types=1);
 
-namespace Contentful\Tests\ContentfulBundle\Unit;
+namespace Atolye15\Tests\ContentfulBundle\Unit;
 
-use Contentful\ContentfulBundle\ContentfulBundle;
-use Contentful\ContentfulBundle\DependencyInjection\Compiler\ProfilerControllerPass;
-use Contentful\Tests\ContentfulBundle\TestCase;
+use Atolye15\ContentfulBundle\ContentfulBundle;
+use Atolye15\ContentfulBundle\DependencyInjection\Compiler\ProfilerControllerPass;
+use Atolye15\Tests\ContentfulBundle\TestCase;
 
 class ContentfulBundleTest extends TestCase
 {

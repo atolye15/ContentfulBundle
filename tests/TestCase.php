@@ -9,9 +9,9 @@
 
 declare(strict_types=1);
 
-namespace Contentful\Tests\ContentfulBundle;
+namespace Atolye15\Tests\ContentfulBundle;
 
-use Contentful\Tests\TestCase as BaseTestCase;
+use Atolye15\Tests\TestCase as BaseTestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
 
