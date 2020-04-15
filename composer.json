@@ -11,7 +11,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
-        "atolye15/contentful": "*",
+        "atolye15/contentful": "dev-master",
         "symfony/framework-bundle": "^3.4|^4.0|^5.0"
     },
     "require-dev": {
