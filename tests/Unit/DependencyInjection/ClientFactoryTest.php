@@ -9,11 +9,11 @@
 
 declare(strict_types=1);
 
-namespace Contentful\Tests\ContentfulBundle\Unit\DependencyInjection;
+namespace Atolye15\Tests\ContentfulBundle\Unit\DependencyInjection;
 
 use Cache\Adapter\PHPArray\ArrayCachePool;
-use Contentful\ContentfulBundle\DependencyInjection\ClientFactory;
-use Contentful\Tests\ContentfulBundle\TestCase;
+use Atolye15\ContentfulBundle\DependencyInjection\ClientFactory;
+use Atolye15\Tests\ContentfulBundle\TestCase;
 use GuzzleHttp\Client as HttpClient;
 use Monolog\Handler\HandlerInterface;
 use Monolog\Handler\TestHandler;

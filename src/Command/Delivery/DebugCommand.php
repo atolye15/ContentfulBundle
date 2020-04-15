@@ -9,13 +9,13 @@
 
 declare(strict_types=1);
 
-namespace Contentful\ContentfulBundle\Command\Delivery;
+namespace Atolye15\ContentfulBundle\Command\Delivery;
 
-use Contentful\Core\Resource\ResourceArray;
-use Contentful\Delivery\Client;
-use Contentful\Delivery\Query;
-use Contentful\Delivery\Resource\ContentType;
-use Contentful\Delivery\Resource\Locale;
+use Atolye15\Core\Resource\ResourceArray;
+use Atolye15\Delivery\Client;
+use Atolye15\Delivery\Query;
+use Atolye15\Delivery\Resource\ContentType;
+use Atolye15\Delivery\Resource\Locale;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Exception\InvalidArgumentException;
 use Symfony\Component\Console\Exception\RuntimeException;

@@ -9,9 +9,9 @@
 
 declare(strict_types=1);
 
-namespace Contentful\ContentfulBundle\DependencyInjection\Compiler;
+namespace Atolye15\ContentfulBundle\DependencyInjection\Compiler;
 
-use Contentful\ContentfulBundle\Controller\Delivery\ProfilerController;
+use Atolye15\ContentfulBundle\Controller\Delivery\ProfilerController;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;

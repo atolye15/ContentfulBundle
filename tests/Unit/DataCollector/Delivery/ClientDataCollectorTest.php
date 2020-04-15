@@ -9,11 +9,11 @@
 
 declare(strict_types=1);
 
-namespace Contentful\Tests\ContentfulBundle\Unit\DataCollector\Delivery;
+namespace Atolye15\Tests\ContentfulBundle\Unit\DataCollector\Delivery;
 
-use Contentful\ContentfulBundle\DataCollector\Delivery\ClientDataCollector;
-use Contentful\Delivery\Client;
-use Contentful\Tests\ContentfulBundle\TestCase;
+use Atolye15\ContentfulBundle\DataCollector\Delivery\ClientDataCollector;
+use Atolye15\Delivery\Client;
+use Atolye15\Tests\ContentfulBundle\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 

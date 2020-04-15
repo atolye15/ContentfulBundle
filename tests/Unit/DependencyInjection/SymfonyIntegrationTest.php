@@ -9,10 +9,10 @@
 
 declare(strict_types=1);
 
-namespace Contentful\Tests\ContentfulBundle\Unit\DependencyInjection;
+namespace Atolye15\Tests\ContentfulBundle\Unit\DependencyInjection;
 
-use Contentful\ContentfulBundle\DependencyInjection\SymfonyIntegration;
-use Contentful\Tests\ContentfulBundle\TestCase;
+use Atolye15\ContentfulBundle\DependencyInjection\SymfonyIntegration;
+use Atolye15\Tests\ContentfulBundle\TestCase;
 
 class SymfonyIntegrationTest extends TestCase
 {

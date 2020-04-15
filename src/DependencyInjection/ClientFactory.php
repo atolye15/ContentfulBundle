@@ -9,10 +9,10 @@
 
 declare(strict_types=1);
 
-namespace Contentful\ContentfulBundle\DependencyInjection;
+namespace Atolye15\ContentfulBundle\DependencyInjection;
 
-use Contentful\Delivery\Client;
-use Contentful\Delivery\ClientOptions;
+use Atolye15\Delivery\Client;
+use Atolye15\Delivery\ClientOptions;
 
 class ClientFactory
 {

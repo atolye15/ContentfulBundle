@@ -9,15 +9,15 @@
 
 declare(strict_types=1);
 
-namespace Contentful\ContentfulBundle\DependencyInjection;
+namespace Atolye15\ContentfulBundle\DependencyInjection;
 
-use Contentful\ContentfulBundle\Cache\Delivery\CacheClearer;
-use Contentful\ContentfulBundle\Cache\Delivery\CacheWarmer;
-use Contentful\ContentfulBundle\Command\Delivery\DebugCommand;
-use Contentful\ContentfulBundle\Command\Delivery\InfoCommand;
-use Contentful\ContentfulBundle\DataCollector\Delivery\ClientDataCollector;
-use Contentful\Delivery\Client;
-use Contentful\Delivery\Client\ClientInterface;
+use Atolye15\ContentfulBundle\Cache\Delivery\CacheClearer;
+use Atolye15\ContentfulBundle\Cache\Delivery\CacheWarmer;
+use Atolye15\ContentfulBundle\Command\Delivery\DebugCommand;
+use Atolye15\ContentfulBundle\Command\Delivery\InfoCommand;
+use Atolye15\ContentfulBundle\DataCollector\Delivery\ClientDataCollector;
+use Atolye15\Delivery\Client;
+use Atolye15\Delivery\Client\ClientInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;

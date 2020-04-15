@@ -22,15 +22,15 @@
     },
     "autoload": {
         "psr-4": {
-            "Contentful\\ContentfulBundle\\": "src/"
+            "Atolye15\\ContentfulBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Contentful\\Tests\\ContentfulBundle\\": "tests/"
+            "Atolye15\\Tests\\ContentfulBundle\\": "tests/"
         },
         "files": [
-            "vendor/contentful/core/scripts/TestCase.php"
+            "vendor/atolye15/core/scripts/TestCase.php"
         ]
     },
     "scripts": {
@@ -38,7 +38,7 @@
         "test-quick-fail": "php vendor/bin/phpunit --stop-on-error --stop-on-failure -v",
         "lint-syntax": "$([ -f php-cs-fixer.phar ] && echo \"php php-cs-fixer.phar\" || echo \"php-cs-fixer\") fix --dry-run --stop-on-violation -v",
         "lint-static-analysis": "$([ -f phpstan.phar ] && echo \"php phpstan.phar\" || echo \"phpstan\") analyse --level=max src/",
-        "release": "php vendor/contentful/core/scripts/release.php"
+        "release": "php vendor/atolye15/core/scripts/release.php"
     },
     "extra": {
         "branch-alias": {

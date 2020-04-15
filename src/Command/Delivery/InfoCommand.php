@@ -9,7 +9,7 @@
 
 declare(strict_types=1);
 
-namespace Contentful\ContentfulBundle\Command\Delivery;
+namespace Atolye15\ContentfulBundle\Command\Delivery;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

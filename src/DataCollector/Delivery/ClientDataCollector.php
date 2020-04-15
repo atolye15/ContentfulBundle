@@ -9,10 +9,10 @@
 
 declare(strict_types=1);
 
-namespace Contentful\ContentfulBundle\DataCollector\Delivery;
+namespace Atolye15\ContentfulBundle\DataCollector\Delivery;
 
-use Contentful\Core\Api\Message;
-use Contentful\Delivery\Client;
+use Atolye15\Core\Api\Message;
+use Atolye15\Delivery\Client;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\DataCollector\DataCollector;

@@ -9,10 +9,10 @@
 
 declare(strict_types=1);
 
-namespace Contentful\Tests\ContentfulBundle\Unit\Command\Delivery;
+namespace Atolye15\Tests\ContentfulBundle\Unit\Command\Delivery;
 
-use Contentful\ContentfulBundle\Command\Delivery\InfoCommand;
-use Contentful\Tests\ContentfulBundle\TestCase;
+use Atolye15\ContentfulBundle\Command\Delivery\InfoCommand;
+use Atolye15\Tests\ContentfulBundle\TestCase;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\BufferedOutput;
 

@@ -9,9 +9,9 @@
 
 declare(strict_types=1);
 
-namespace Contentful\ContentfulBundle;
+namespace Atolye15\ContentfulBundle;
 
-use Contentful\ContentfulBundle\DependencyInjection\Compiler\ProfilerControllerPass;
+use Atolye15\ContentfulBundle\DependencyInjection\Compiler\ProfilerControllerPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
