@@ -11,7 +11,7 @@ declare(strict_types=1);
 
 namespace Atolye15\ContentfulBundle\DependencyInjection;
 
-use Atolye15\Core\Api\IntegrationInterface;
+use Contentful\Core\Api\IntegrationInterface;
 
 class SymfonyIntegration implements IntegrationInterface
 {
