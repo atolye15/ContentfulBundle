@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.0",
-        "atolye15/contentful": "dev-master",
+        "atolye15/contentful": "^4.2",
         "symfony/framework-bundle": "^3.4|^4.0"
     },
     "require-dev": {
@@ -37,8 +37,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "4.0.0-dev"
+            "dev-master": "4.2.0-dev"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
