@@ -3,7 +3,7 @@
 /**
  * This file is part of the contentful/contentful-bundle package.
  *
- * @copyright 2015-2020 Contentful GmbH
+ * @copyright 2015-2018 Contentful GmbH
  * @license   MIT
  */
 
@@ -52,6 +52,8 @@ class ContentfulExtension extends Extension
      * They are defined as abstract as a "concrete" implementation will be defined
      * for every configured client.
      *
+     * @param ContainerBuilder $container
+     *
      * @return ContentfulExtension
      */
     private function registerCache(ContainerBuilder $container): self
@@ -70,6 +72,8 @@ class ContentfulExtension extends Extension
     /**
      * Registers the CLI command which is in charge of extracting the configuration info,
      * and displaying it for debugging purposes.
+     *
+     * @param ContainerBuilder $container
      *
      * @return ContentfulExtension
      */
@@ -96,6 +100,8 @@ class ContentfulExtension extends Extension
     /**
      * Registers the data collector, which will display info about the configured clients
      * and the queries being made to the API.
+     *
+     * @param ContainerBuilder $container
      *
      * @return ContentfulExtension
      */
@@ -133,7 +139,10 @@ class ContentfulExtension extends Extension
             return $carry + (int) (\true === $config['default']);
         }, 0);
         if (1 !== $defaults) {
-            throw new LogicException(\sprintf('Contentful client configuration requires exactly one client defined with "default: true" key, %d found.', $defaults));
+            throw new LogicException(\sprintf(
+                'Contentful client configuration requires exactly one client defined with "default: true" key, %d found.',
+                $defaults
+            ));
         }
 
         $clientsInfo = [];
@@ -171,6 +180,10 @@ class ContentfulExtension extends Extension
 
     /**
      * Converts the references in the configuration into actual Reference objects.
+     *
+     * @param array $options
+     *
+     * @return array
      */
     private function configureDeliveryOptions(array $options): array
     {

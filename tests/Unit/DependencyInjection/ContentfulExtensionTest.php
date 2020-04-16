@@ -3,7 +3,7 @@
 /**
  * This file is part of the contentful/contentful-bundle package.
  *
- * @copyright 2015-2020 Contentful GmbH
+ * @copyright 2015-2018 Contentful GmbH
  * @license   MIT
  */
 
@@ -24,7 +24,6 @@ use Monolog\Logger;
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 use Symfony\Component\DependencyInjection\Exception\LogicException;
 use Symfony\Component\DependencyInjection\Reference;
 
@@ -116,11 +115,12 @@ class ContentfulExtensionTest extends TestCase
         $this->markTestAsPassed('Test did not throw an exception');
     }
 
+    /**
+     * @expectedException \Symfony\Component\Config\Definition\Exception\InvalidConfigurationException
+     * @expectedExceptionMessage Invalid configuration for path "contentful.delivery.main.options.host": Parameter "host" in client configuration must be a valid URL.
+     */
     public function testInvalidHost()
     {
-        $this->expectException(InvalidConfigurationException::class);
-        $this->expectExceptionMessage('Invalid configuration for path "contentful.delivery.main.options.host": Parameter "host" in client configuration must be a valid URL.');
-
         $container = $this->getContainer();
         $extension = new ContentfulExtension();
 
@@ -270,11 +270,11 @@ class ContentfulExtensionTest extends TestCase
         $this->assertSame(CacheItemPoolInterface::class, (string) $cachePool);
         /** @var bool $runtime */
         $runtime = $arguments[2];
-        $this->assertIsBool($runtime);
+        $this->assertInternalType('bool', $runtime);
         $this->assertTrue($runtime);
         /** @var bool $content */
         $content = $arguments[3];
-        $this->assertIsBool($content);
+        $this->assertInternalType('bool', $content);
         $this->assertTrue($content);
     }
 
@@ -349,11 +349,11 @@ class ContentfulExtensionTest extends TestCase
         $this->assertSame(ArrayCachePool::class, (string) $cachePool);
         /** @var bool $runtime */
         $runtime = $arguments[2];
-        $this->assertIsBool($runtime);
+        $this->assertInternalType('bool', $runtime);
         $this->assertTrue($runtime);
         /** @var bool $content */
         $content = $arguments[3];
-        $this->assertIsBool($content);
+        $this->assertInternalType('bool', $content);
         $this->assertTrue($content);
     }
 

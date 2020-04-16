@@ -3,7 +3,7 @@
 /**
  * This file is part of the contentful/contentful-bundle package.
  *
- * @copyright 2015-2020 Contentful GmbH
+ * @copyright 2015-2018 Contentful GmbH
  * @license   MIT
  */
 
@@ -20,6 +20,8 @@ class ProfilerControllerPass implements CompilerPassInterface
 {
     /**
      * Loads the definition for the ProfilerController when the profiler and twig are present.
+     *
+     * @param ContainerBuilder $container
      */
     public function process(ContainerBuilder $container)
     {

@@ -3,7 +3,7 @@
 /**
  * This file is part of the contentful/contentful-bundle package.
  *
- * @copyright 2015-2020 Contentful GmbH
+ * @copyright 2015-2018 Contentful GmbH
  * @license   MIT
  */
 
@@ -19,6 +19,8 @@ class TestCase extends BaseTestCase
 {
     /**
      * @param string $environment
+     *
+     * @return ContainerBuilder
      */
     protected function getContainer($environment = 'test'): ContainerBuilder
     {

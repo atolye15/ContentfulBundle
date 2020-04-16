@@ -3,7 +3,7 @@
 /**
  * This file is part of the contentful/contentful-bundle package.
  *
- * @copyright 2015-2020 Contentful GmbH
+ * @copyright 2015-2018 Contentful GmbH
  * @license   MIT
  */
 
@@ -25,6 +25,9 @@ class CacheClearer implements CacheClearerInterface
 
     /**
      * DeliveryCacheClearer constructor.
+     *
+     * @param Client                 $client
+     * @param CacheItemPoolInterface $cacheItemPool
      */
     public function __construct(Client $client, CacheItemPoolInterface $cacheItemPool)
     {
@@ -34,7 +37,7 @@ class CacheClearer implements CacheClearerInterface
     /**
      * {@inheritdoc}
      */
-    public function clear(string $cacheDir)
+    public function clear($cacheDir)
     {
         $this->clearer->clear();
     }
