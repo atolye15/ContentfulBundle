@@ -3,7 +3,7 @@
 /**
  * This file is part of the contentful/contentful-bundle package.
  *
- * @copyright 2015-2020 Contentful GmbH
+ * @copyright 2015-2018 Contentful GmbH
  * @license   MIT
  */
 
@@ -54,13 +54,11 @@ class ClientFactory
         }
 
         if (isset($config['options']['cache']['pool'])) {
-            if(!isset($config['options']['cache']['prefix'])) { $config['options']['cache']['prefix'] = ''; }
-
             $options->withCache(
                 $config['options']['cache']['pool'],
                 $config['options']['cache']['runtime'],
                 $config['options']['cache']['content'],
-                $config['options']['cache']['prefix']
+                $config['options']['cache']['prefix'] ?? ''
             );
         }
 

@@ -3,7 +3,7 @@
 /**
  * This file is part of the contentful/contentful-bundle package.
  *
- * @copyright 2015-2020 Contentful GmbH
+ * @copyright 2015-2018 Contentful GmbH
  * @license   MIT
  */
 
@@ -35,6 +35,11 @@ class CacheWarmer implements CacheWarmerInterface
 
     /**
      * DeliveryCacheWarmer constructor.
+     *
+     * @param Client                 $client
+     * @param CacheItemPoolInterface $cacheItemPool
+     * @param bool                   $autoWarmup
+     * @param bool                   $cacheContent
      */
     public function __construct(Client $client, CacheItemPoolInterface $cacheItemPool, bool $autoWarmup, bool $cacheContent)
     {
@@ -46,7 +51,7 @@ class CacheWarmer implements CacheWarmerInterface
     /**
      * {@inheritdoc}
      */
-    public function warmUp(string $cacheDir)
+    public function warmUp($cacheDir)
     {
         $this->warmer->warmUp($this->cacheContent);
     }

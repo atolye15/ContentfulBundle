@@ -3,7 +3,7 @@
 /**
  * This file is part of the contentful/contentful-bundle package.
  *
- * @copyright 2015-2020 Contentful GmbH
+ * @copyright 2015-2018 Contentful GmbH
  * @license   MIT
  */
 
@@ -49,7 +49,7 @@ class ClientDataCollector extends DataCollector
     /**
      * {@inheritdoc}
      */
-    public function collect(Request $request, Response $response, \Throwable $exception = \null)
+    public function collect(Request $request, Response $response, \Exception $exception = \null)
     {
         $messages = [];
         foreach ($this->clients as $client) {
@@ -59,6 +59,9 @@ class ClientDataCollector extends DataCollector
         $this->data['messages'] = $messages;
     }
 
+    /**
+     * @return array
+     */
     public function getClients(): array
     {
         return $this->data['clients'];
@@ -72,11 +75,17 @@ class ClientDataCollector extends DataCollector
         return $this->data['messages'];
     }
 
+    /**
+     * @return int
+     */
     public function getRequestCount(): int
     {
         return \count($this->data['messages']);
     }
 
+    /**
+     * @return float
+     */
     public function getTotalDuration(): float
     {
         return \array_reduce($this->data['messages'], function (float $carry, Message $message) {
@@ -84,6 +93,9 @@ class ClientDataCollector extends DataCollector
         }, 0.0);
     }
 
+    /**
+     * @return int
+     */
     public function getErrorCount(): int
     {
         return \array_reduce($this->data['messages'], function (int $carry, Message $message) {
@@ -91,6 +103,9 @@ class ClientDataCollector extends DataCollector
         }, 0);
     }
 
+    /**
+     * @return string
+     */
     public function getName(): string
     {
         return 'contentful';

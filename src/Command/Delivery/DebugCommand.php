@@ -3,7 +3,7 @@
 /**
  * This file is part of the contentful/contentful-bundle package.
  *
- * @copyright 2015-2020 Contentful GmbH
+ * @copyright 2015-2018 Contentful GmbH
  * @license   MIT
  */
 
@@ -70,7 +70,10 @@ class DebugCommand extends Command
         }
 
         if (!isset($this->clients[$name])) {
-            throw new InvalidArgumentException(\sprintf('Could not find the requested client "%s", use "contentful:delivery:info" to check the configured clients.', $name));
+            throw new InvalidArgumentException(\sprintf(
+                'Could not find the requested client "%s", use "contentful:delivery:info" to check the configured clients.',
+                $name
+            ));
         }
 
         $client = $this->clients[$name];
@@ -92,7 +95,11 @@ class DebugCommand extends Command
                 $entries[$contentType->getId()] = $client->getEntries($query)->getTotal();
             }
         } catch (\Exception $exception) {
-            throw new RuntimeException('Requested service was found, but data could not be loaded. Try checking client credentials.', 0, $exception);
+            throw new RuntimeException(
+                'Requested service was found, but data could not be loaded. Try checking client credentials.',
+                0,
+                $exception
+            );
         }
 
         $io->title('Debug client');
@@ -138,7 +145,5 @@ class DebugCommand extends Command
             $data
         );
         $io->comment('https://app.contentful.com/spaces/'.$space->getId().'/environments/'.$environment->getId().'/content_types');
-
-        return 0;
     }
 }

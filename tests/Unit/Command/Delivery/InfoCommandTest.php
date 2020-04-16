@@ -3,7 +3,7 @@
 /**
  * This file is part of the contentful/contentful-bundle package.
  *
- * @copyright 2015-2020 Contentful GmbH
+ * @copyright 2015-2018 Contentful GmbH
  * @license   MIT
  */
 
@@ -28,7 +28,7 @@ class InfoCommandTest extends TestCase
         $this->assertSame('Shows information about the configured Contentful delivery clients', $command->getDescription());
 
         $command->run($input, $output);
-        $this->assertStringContainsStringIgnoringCase('There are no Contentful clients currently configured', $output->fetch());
+        $this->assertContains('There are no Contentful clients currently configured', $output->fetch());
 
         $command = new InfoCommand($this->getInfo());
         $command->run($input, $output);

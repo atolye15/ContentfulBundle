@@ -192,8 +192,7 @@ class Configuration implements ConfigurationInterface
             ->defaultFalse()
             ->end()
             ->scalarNode('prefix')
-            ->info('Prefix will be prepended to cache key.')
-            ->defaultNull()
+            ->info('Namespace name a.k.a prefix for cache keys.')
             ->end()
             ->end()
         ;

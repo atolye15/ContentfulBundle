@@ -3,7 +3,7 @@
 /**
  * This file is part of the contentful/contentful-bundle package.
  *
- * @copyright 2015-2020 Contentful GmbH
+ * @copyright 2015-2018 Contentful GmbH
  * @license   MIT
  */
 
@@ -62,7 +62,5 @@ class InfoCommand extends Command
             ['Name', 'Service', 'API', 'Space', 'Environment', 'Cache'],
             $data
         );
-
-        return 0;
     }
 }

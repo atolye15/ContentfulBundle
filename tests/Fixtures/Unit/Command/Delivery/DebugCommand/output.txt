@@ -29,10 +29,10 @@ Content types (4)
  ------------------------ ------- -------- --------- ------------- 
   ID                       Name    Fields   Entries   Description  
  ------------------------ ------- -------- --------- ------------- 
-  cat                      Cat     8        3         Meow.        
+  dog                      Dog     3        2         Bark!        
   1t9IbcfdCk6m04uISSsaIK   City    2        4                      
   human                    Human   4        1                      
-  dog                      Dog     3        2         Bark!        
+  cat                      Cat     8        3         Meow.        
  ------------------------ ------- -------- --------- ------------- 
 
  // https://app.contentful.com/spaces/cfexampleapi/environments/master/content_types                                    

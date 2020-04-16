@@ -3,26 +3,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/contentful/ContentfulBundle/compare/6.0.0...HEAD)
+## [Unreleased](https://github.com/contentful/ContentfulBundle/compare/4.0.0...HEAD)
 
 <!-- PENDING-CHANGES -->
 > No meaningful changes since last release.
 <!-- /PENDING-CHANGES -->
-
-## [6.0.0](https://github.com/contentful/ContentfulBundle/tree/6.0.0) (2020-03-24)
-
-### Changed
-
-* Added support for PHP 7.4
-* Dropped support for PHP 7.0 & 7.1
-* Added support for symfony 5
-* Upgraded dependencies
-
-## [5.0.0](https://github.com/contentful/ContentfulBundle/tree/5.0.0) (2020-02-24)
-
-### Changed
-
-* Updated contentful/contenful dependency and releasing as a major version due to breaking changes in dependencies
 
 ## [4.0.0](https://github.com/contentful/ContentfulBundle/tree/4.0.0) (2018-12-05)
 
